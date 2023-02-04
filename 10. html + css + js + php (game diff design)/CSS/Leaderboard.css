@@ -1,0 +1,63 @@
+body {
+    background-color: pink;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    opacity: 0;
+    transition: .5s;
+    text-align: center;
+    font-size: 18px;
+}
+
+button{
+    background-color: #DC143C;
+    font-size: 14px;
+    width: 100px;
+    height: 24px;
+    transition-duration: 0.1s;
+}
+
+button:hover{
+    background-color: #FF1493;
+    color: pink;
+}
+
+#leaderboard-container{
+    margin: 0 auto;
+    width: 50%;
+    height: 900px;
+    overflow: auto;
+}
+
+#leaderboard {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px solid #FF1493;
+    border-spacing: 2px;
+    border-width: 4px;
+    padding: 0;
+    background-color: white;
+}
+
+#leaderboard th {
+    border: 1px solid #FF1493;
+}
+
+#btn-place{
+    text-align: right;
+}
+
+#th-place,
+#th-age {
+    width: 10%;
+}
+
+#th-name,
+#th-real-name,
+#th-score,
+#th-time {
+    width: 20%; 
+}
+
+#leaderboard td {
+    border: 1px solid #FF1493;
+}

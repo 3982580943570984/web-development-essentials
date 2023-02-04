@@ -1,0 +1,111 @@
+body{
+    background-color: aquamarine;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.testForm{
+    text-align: center;
+}
+
+.testForm,
+.testFormTable{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    width: 63%;
+    background-color: #fff;
+}
+
+#QuestionPlace,
+#AnswersPlace,
+#Question,
+#Answers,
+.questionBtns,
+.timer{
+    text-align: left;
+    font-size: 20px;
+    
+    display: table-cell;
+    vertical-align: top;
+    padding: 15px;   
+    border: 1px solid rgb(0, 131, 102);
+}
+
+#QuestionPlace,
+#AnswersPlace{
+    height: 160px;
+}
+
+#Question,
+#Answers,
+.questionBtns{
+    text-align: left;
+    font-size: 20px;
+
+    display: table-cell;
+    vertical-align: top;
+    padding: 15px;   
+    border: 1px solid rgb(0, 131, 102);
+}
+
+.labInfo{
+    text-align: left;
+    font-size: 24px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.mainText{
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.settings{
+    font-size: 20px;
+    text-align: center;
+}
+
+.startButton,
+.BtnEnd{
+    text-align: center;
+}
+
+.table{
+    margin: 0 auto;
+    columns: 5;
+    border-color: #48D1CC;
+    background-color: #fff;
+    width: 63%;
+    padding: 0;
+    border-spacing: 2px;
+}
+
+#rightAnswer{
+    color:rgb(0, 255, 0);
+    text-decoration: underline;
+}
+#wrongAnswer{
+    color:red;
+    text-decoration: underline;
+}
+
+.column-one,
+.column-three,
+.column-five{
+    width: 10%;
+}
+.column-two{
+    width: 50%;
+}
+.column-four{
+    width: 20%;
+}
+
+select{
+    width: 300px;
+}

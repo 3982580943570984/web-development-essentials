@@ -1,0 +1,78 @@
+body{
+    background-color: pink;
+}
+
+.requests-table-form{
+    display: none;
+}
+
+.requests-table-form{
+    text-align: center;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+.requests-table-form p{
+    text-align: left;
+}
+
+.requests-table-form input,
+.requests-table-form button,
+.requests-table-form select{
+    width: 100px;
+    text-align: center;
+}
+
+.request-form{
+    margin: 0 auto;
+    width: 600px;
+}
+
+.request-form label{
+    text-align: left;
+}
+
+.request-form li > div{
+    display: inline-block;
+}
+
+#medName-error, #medForm-error,
+#medDosage-error,#medAmount-error,
+#medFirm-error
+{
+    background-color: grey;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+#medName-error-msg, #medForm-error-msg,
+#medDosage-error-msg,#medAmount-error-msg,
+#medFirm-error-msg
+{
+    font-size: 13px;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+}
+
+input{
+    width: 150px;
+}
+
+select{
+    width: 158px;
+}
+
+button{
+    text-align: center;
+}

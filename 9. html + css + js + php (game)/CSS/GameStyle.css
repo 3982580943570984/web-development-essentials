@@ -1,0 +1,359 @@
+@font-face {
+    font-family: 'Playfair Display Cursive';
+    src: url(../FONTS/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../FONTS/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    margin: 0 auto;
+    background-image: url(../IMAGES/Texture.jpg);
+    font-size: 14px;
+    opacity: 0;
+    transition: .5s;
+}
+
+button {
+    background-color: #6a97ce;
+    font-family: 'Playfair Display', Courier, monospace;
+    font-size: 14px;
+    width: 120px;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: #6a97ce;
+    color: pink;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+#buttons {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#statistics {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+
+    width: 90%;
+    height: 60px;
+
+    background-color: #dde8f1;
+
+    border: 1px solid #000;
+}
+
+#game-screen {
+    height: 1040px;
+    text-align: center;
+}
+
+#stat-signs {
+    padding-top: 2px;
+    font-family: 'Playfair Display', Courier, monospace;
+}
+
+#stat-signs,
+#stat-values {
+    height: 50%;
+}
+
+#points,
+#time-left,
+#lives-remaining,
+#pnt-value,
+#time-value,
+#lives-value {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    width: 30%;
+}
+
+#pnt-value,
+#time-value,
+#lives-value {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+#pnt-value,
+#time-value {
+    font-family: 'Playfair Display', Courier, monospace;
+}
+
+.heart {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 17px;
+    background-color: #c00000;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+.heart::before {
+    position: absolute;
+    width: 17px;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: #c00000;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 0 50px 50px 0;
+}
+
+.heart-before {
+    display: inline-block;
+    position: relative;
+    width: 10px;
+    height: 17px;
+    background-color: grey;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 50px 50px 0 0;
+    -webkit-transform: rotate(315deg);
+    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
+    -o-transform: rotate(315deg);
+    transform: rotate(315deg);
+}
+
+.heart-before::before {
+    position: absolute;
+    width: 17px;
+    height: 10px;
+    left: 0;
+    bottom: 0;
+    content: "";
+    background-color: grey;
+    -webkit-border-radius: 50px 50px 0 0;
+    -moz-border-radius: 50px 50px 0 0;
+    border-radius: 0 50px 50px 0;
+}
+
+#game-field {
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+
+    width: 90%;
+    height: 85%;
+
+    background-color: #dde8f1;
+    background-image: url(../IMAGES/Mountain3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    border: 1px solid #000;
+}
+
+#balloon-field,
+#cloud-field {
+    text-align: center;
+
+    width: 50%;
+    height: 750px;
+}
+
+#balloon {
+    margin: 0 auto;
+    background-image: url(../Images/Balloon3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+
+    left: calc(50% - 50px);
+    top: calc(50% - 50px);
+    position: absolute;
+
+    height: 100px;
+    width: 70px;
+}
+
+#bln-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 6px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    height: 40px;
+    width: 40px;
+}
+
+.cloud {
+    margin: 0 auto;
+    background-image: url(../Images/Cloud.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+
+    height: 80px;
+    width: 160px;
+}
+
+.expression {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    height: 40px;
+}
+
+#abilities-field {
+    display: block;
+
+    width: 100%;
+
+    position: absolute;
+    text-align: center;
+    bottom: 80px;
+}
+
+#abilities-field>div {
+    display: inline-block;
+    width: 10%;
+}
+
+.ability {
+    background-color: white;
+    height: 65px;
+    width: 65px;
+    position: relative;
+}
+
+.ability:hover:after {
+    content: attr(data-title);
+    position: absolute;
+    left: 120%;
+    top: -100%;
+    width: 150px;
+    z-index: 1;
+    background: rgba(96, 96, 92, 0.9);
+    font-size: 14px;
+    padding: 5px 10px;
+}
+
+#bln-speed,
+#bln-delete,
+#bln-time {
+    background-color: beige;
+    border: 1px solid #000;
+}
+
+#bln-speed {
+    background-image: url(../Images/WindSpeed.png);
+    background-size: 130%;
+    background-position: center;
+}
+
+#bln-delete {
+    background-image: url(../Images/CrossedCloud.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#bln-time {
+    background-image: url(../Images/Clock.png);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#btn-keyCode {
+    color: black;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 0px;
+    left: 3px;
+}
+
+#game-over-field {
+    text-align: center;
+    margin-top: 100px;
+}
+
+#game-over-sign {
+    background-color: white;
+    border: 1px solid #000;
+    display: none;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0 auto;
+    position: absolute;
+    padding: 0px 10px;
+}
+
+#btn-get-stats {
+    display: none;
+}
+
+#btn-replay {
+    display: none;
+}
+
+.statistics {
+    display: none;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: 1px solid #000000;
+    text-align: center;
+    width: 300px;
+}
+
+.stat {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.score-stat div,
+.time-stat div {
+    text-align: left;
+    font-size: 16px;
+    padding: 0px 40px;
+}
+
+.score-stat p,
+.time-stat p {
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 15px;
+}

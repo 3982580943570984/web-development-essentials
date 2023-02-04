@@ -1,0 +1,55 @@
+body{
+	background-color: #000000; 
+	background-image: url(../Pictures/Black_Ice_FHD.jpg);
+	background-size: cover;
+	
+	position: relative;
+
+	font-size: 24px;
+	font-weight: normal;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.anberlinImage{
+	position: absolute, right top;
+
+	width: 854px;
+	height: 540px;
+	float: right;
+	margin-top: 20px;
+	margin-left: 45px;
+}
+
+.title{
+	text-align: center;
+	font-size: 60px;
+	font-weight: bold;
+	font-style: italic;
+	color: rgb(124, 1, 1);
+}
+
+.mainText p{
+	font-size: 44px;
+	font-weight: normal;
+	color: rgb(255, 136, 0);
+}
+
+.list ul{
+	text-align: start;
+	font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-style: italic;
+	font-size: 40px;
+	color: rgb(180, 0, 0);
+	margin-left: 9%;
+}
+
+.listName{
+	margin-top: 50px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-size: 36px;
+	font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	color: yellow;
+}

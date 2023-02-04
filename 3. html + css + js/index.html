@@ -1,0 +1,63 @@
+<!--
+    Свинарев Егор 21ВП1
+    Вариант 25
+
+    Задание:
+    Игра в кости против компьютера двумя кубиками
+    Выводить в таблицу статистику побед
+-->
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Игра в кости</title>
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/main.js"></script>
+</head>
+
+<body>
+    <h2 class="labNumber">Лаб. работа №25</h2>
+    <h2 class="task">Задание: Игра в кости против компьютера двумя кубиками. Выводить в таблицу статистику побед</h2>
+    <h2 class="title"> Игра в кости </h2>
+    <p class="mainText"> Основной принцип игры в кости против компьютера - побеждает тот, чей результат броска
+        (сумма выпавших очков на игральных костях) будет больше </p>
+    <p class="resultTableTitle"> Таблица результатов игры:</p>
+
+    <p class="playButton"><button onclick="clearResults(); displayResults();">Сделать бросок</button></p>
+    <table border="4" class="shotTable">
+        <th width="20%"></th>
+        <th width="30%">Бросок 1</th>
+        <th width="30%">Бросок 2</th>
+        <th width="20%">Сумма броска</th>
+        <tr></tr>
+        <th width="20%">Человек</th>
+        <th width="30%" id="playerFirstShot">0</th>
+        <th width="30%" id="playerSecondShot">0</th>
+        <th width="20%" id="playerSummary">0</th>
+        <tr></tr>
+        <th width="20%">Компьютер</th>
+        <th width="30%" id="compFirstShot">0</th>
+        <th width="30%" id="compSecondShot">0</th>
+        <th width="20%" id="compSummary">0</th>
+    </table>
+    <p id="result"></p>
+    <br><br>
+    <p class="resultTableTitle"> Статистика игр:</p>
+    <table border="4" class="resultTable">
+        <th width="20%"></th>
+        <th width="40%">Побед</th>
+        <th width="40%">Поражений</th>
+        <tr></tr>
+        <th width="20%">Человек</th>
+        <th width="40%" id="playerWin">0</th>
+        <th width="40%" id="playerLose">0</th>
+        <tr></tr>
+        <th width="20%">Компьютер</th>
+        <th width="40%" id="compWin">0</th>
+        <th width="40%" id="compLose">0</th>
+    </table>
+    <h6 class="sign"> Zephrys. </h6>
+</body>
+
+</html>

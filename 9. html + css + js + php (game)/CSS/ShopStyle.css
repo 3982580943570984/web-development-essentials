@@ -1,0 +1,114 @@
+@font-face {
+    font-family: 'Playfair Display Cursive';
+    src: url(../FONTS/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../FONTS/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url(../IMAGES/Texture.jpg);
+    font-family: 'Playfair Display', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+h2 {
+    font-family: 'Playfair Display Cursive', Courier, monospace;
+    font-size: 34px;
+}
+
+button {
+    background-color: #6a97ce;
+    font-family: 'Playfair Display', Courier, monospace;
+    font-size: 14px;
+    width: 120px;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: #6a97ce;
+    color: pink;
+}
+
+#player-currency {
+    margin: 0 auto;
+    text-align: left;
+    width: 60%;
+}
+
+#category-title {
+    margin: 0 auto;
+    width: 60%;
+    border: 1px solid #000;
+}
+
+#category-title div {
+    display: inline-block;
+
+    text-align: center;
+    font-size: 18px;
+
+    width: 30%;
+    height: 30px;
+
+    padding-top: 9px;
+}
+
+#cloud-category {
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+}
+
+#balloon-section,
+#cloud-section,
+#background-section {
+    margin: 0 auto;
+    display: none;
+
+    width: 60%;
+    height: 850px;
+
+    overflow: auto;
+
+    border: 1px solid #000;
+}
+
+.image {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+
+    width: 35%;
+    /* height: 200px; */
+
+    border: 1px solid #000;
+
+    /* border-right: 1px solid #000;
+    border-bottom: 1px solid #000; */
+}
+
+.info {
+    width: 64%;
+    height: 200px;
+    border: 1px solid #000;
+}
+
+.info div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+}
+
+#btn-place {
+    margin: 0 auto;
+    text-align: right;
+    width: 60%;
+}

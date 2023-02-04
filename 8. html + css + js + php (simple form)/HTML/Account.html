@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/AccountStyle.css">
+    <script src="../JS/jQuery.js"></script>
+    <script src="../JS/RequestScript.js"></script>
+    <title>Personal area</title>
+</head>
+
+<body>
+    <div class="request-form">
+        <p class="helloUser"></p>
+        <p><button type="button" id="btn-quit">Log out</button></p>
+        <ul>
+            <li>
+                <label for="medicine-name">Medicine name:</label>
+                <input type="text" id="medicine-name" name="medicine-name" placeholder="Enter medicine name">
+                <div id="medName-error"></div>
+                <div id="medName-error-msg"></div>
+            </li>
+            <li>
+                <label for="medicine-form">Medicine form:</label>
+                <select name="medicine-form" id="medicine-form">
+                    <option value="" disabled selected>Select one</option>
+                    <option value="Pills">Pills</option>
+                    <option value="Syrup">Syrup</option>
+                    <option value="Powder">Powder</option>
+                </select>
+                <div id="medForm-error"></div>
+                <div id="medForm-error-msg"></div>
+            </li>
+            <li>
+                <label for="medicine-dosage">Dosage:</label>
+                <input type="text" id="medicine-dosage" name="medicine-dosage" placeholder="Enter dosage">
+                <div id="medDosage-error"></div>
+                <div id="medDosage-error-msg"></div>
+            </li>
+            <li>
+                <label for="medicine-amount">Amount:</label>
+                <input type="text" id="medicine-amount" name="medicine-amount" placeholder="Enter amount">
+                <div id="medAmount-error"></div>
+                <div id="medAmount-error-msg"></div>
+            </li>
+            <li>
+                <label for="medicine-firm">Firm:</label>
+                <input type="text" id="medicine-firm" name="medicine-firm" placeholder="Enter firm">
+                <div id="medFirm-error"></div>
+                <div id="medFirm-error-msg"></div>
+            </li>
+            <li>
+                <p class="req-form-btns">
+                    <button type="button" id="btn-request">Make request</button>
+                    <button type="button" id="btn-request-table">My requests</button>
+                </p>
+            </li>
+        </ul>
+        <p class="result3"></p>
+    </div>
+
+    <div class="requests-table-form">
+        <table class="requests-table">
+        </table>
+        <p><button type="button" id="btn-getback">Get back</button></p>
+        <div id="errName"></div>
+        <div id="errAmount"></div>
+        <div id="errDosage"></div>
+        <div id="errFirm"></div>
+        <div id="errIdentity"></div>
+    </div>
+</body>
+
+</html>

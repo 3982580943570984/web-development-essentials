@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'Playfair Display Cursive';
+    src: url(../FONTS/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../FONTS/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url(../IMAGES/Texture.jpg);
+    font-family: 'Playfair Display', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+h2 {
+    font-family: 'Playfair Display Cursive', Courier, monospace;
+    font-size: 34px;
+}
+
+button {
+    background-color: #6a97ce;
+    font-family: 'Playfair Display', Courier, monospace;
+    font-size: 14px;
+    width: 120px;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: #6a97ce;
+    color: pink;
+}
+
+#btn-place{
+    margin: 0 auto;
+    text-align: right;
+    width: 60%;
+}

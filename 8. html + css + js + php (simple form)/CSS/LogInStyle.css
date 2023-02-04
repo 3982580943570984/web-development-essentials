@@ -1,0 +1,101 @@
+body{
+    background-color: pink;    
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p{
+    font-size: 22px;
+    font-weight: bold;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+label{
+    font-size: 20px;
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+}
+
+input{
+    width: 200px;
+    text-align: center;
+}
+
+button{
+    background-color: #DC143C;
+    font-size: 16px;
+    width: 120px;
+    transition-duration: 0.1s;
+}
+
+button:hover{
+    background-color: #FF1493;
+    color: pink;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    min-height: 90%;
+    top: calc(50% - 540px);
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.result{
+    height: 10px;
+}
+
+.registration-form{
+    display: none;
+}
+
+.entry-form,
+.registration-form{
+    margin: 0 auto;
+    width: 1200px;
+    text-align: center;
+}
+
+.registration-form li > div{
+    display: inline-block;
+    width: 200px;
+    text-align: left;
+}
+
+.entry-form li,
+.registration-form li{
+    margin-bottom: 10px;
+}
+
+#new-login-error, #new-password-error,
+#new-email-error,#new-name-error,
+#new-age-error,
+#medName-error, #medForm-error,
+#medDosage-error,#medAmount-error,
+#medFirm-error
+{
+    background-color: grey;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+#new-login-error-msg, #new-password-error-msg,
+#new-email-error-msg,#new-name-error-msg,
+#new-age-error-msg,
+#medName-error-msg, #medForm-error-msg,
+#medDosage-error-msg,#medAmount-error-msg,
+#medFirm-error-msg
+{
+    font-size: 13px;
+}

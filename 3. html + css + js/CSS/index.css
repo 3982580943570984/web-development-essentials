@@ -1,0 +1,98 @@
+body{
+    background-image: url(../Pictures/dice.png);
+    background-size: cover;
+    background-color: aquamarine;
+
+    color: rgb(63, 63, 63);
+    
+    position: relative;
+}
+
+.labNumber{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+}
+
+.task{
+    text-align: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px; 
+}
+
+.title {
+    text-align: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.resultTableTitle{
+    text-align: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+
+    margin-left: 41px;
+    margin-bottom: 20px;
+}
+
+.sign{
+    text-align: center;
+
+    font-weight: normal;
+    font-family: 'Syne Tactile', cursive;
+    font-size: 20px;
+
+    margin-top: 20px;
+}
+
+.mainText{
+    text-align: center;
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.playButton{
+    text-align: center;
+}
+
+.shotTable{
+    margin: 0 auto;
+
+    columns: 3;
+
+    border-color: #48D1CC;
+
+    background-color: #fff;
+
+    width: 50%;
+
+    padding: 0;
+    border-spacing: 2px;
+}
+
+.resultTable{
+    margin: 0 auto;
+    columns: 3;
+
+    border-color: #48D1CC;
+
+    background-color: #fff;
+
+    width: 50%;
+
+    padding: 0;
+    border-spacing: 2px;
+}
+
+#result{
+    text-align:center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+    font-weight: bold;
+}

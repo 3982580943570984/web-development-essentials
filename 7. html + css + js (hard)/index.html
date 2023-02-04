@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/index.css">
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/main.js"></script>
+    <title>??????</title>
+</head>
+
+<body>
+    <h2 class="header">♡。✧|3ㄴ¥∆ㅜ✧。* °*:</h2>
+    <div class="game">
+        <div class="menu">
+            <button class="btn-play" type="button">Играть</button>
+            <p class="play"></p>
+            <button class="btn-settings" type="button">Настройки</button>
+            <p class="settings">
+            <div class="st-form">
+                <div class="buttons">
+                    <p><button class="btn-st-mode" type="button">✧ Режим игры</button></p>
+                    <p><button class="btn-st-timer" type="button">✧ Таймер</button></p>
+                    <p><button class="btn-st-target" type="button">✧ Мишень</button></p>
+                    <p><button class="btn-st-crosshair" type="button">✧ Прицел</button></p>
+                    <p><button class="btn-st-effect" type="button">✧ Эффекты</button></p>
+                </div>
+                <div class="st-parametres">
+                    <div class="st-mode">
+                        Режим игры: <br>
+                        <select name="gamemode" id="gamemode">
+                            <option value="1">Easy</option>
+                            <option value="2">Normal</option>
+                            <option value="3">Hard</option>
+                            <option value="4">Beast</option>
+                        </select>
+                    </div>
+                    <div class="st-timer">
+                        Задание таймера в секундах: <br>
+                        <input id="timer" type="text" value="10">
+                    </div>
+                    <div class="st-target">
+                        <div class="target-type">
+                            Выбор типов фигур:<br>
+                            <label><input type=checkbox id="type" name="type" value="circle" checked>Круг</label>
+                            <label><input type=checkbox id="type" name="type" value="triangle">Треугольник</label>
+                            <label><input type=checkbox id="type" name="type" value="square">Квадрат</label>
+                        </div>
+                        <br>
+                        <div class="target-size">
+                            Выбор размера фигур:<br>
+                            <label><input type=radio id="small" name="size" value="1" checked>Маленький</label>
+                            <label><input type=radio id="medium" name="size" value="2">Средний</label>
+                            <label><input type=radio id="huge" name="size" value="3">Большой</label>
+                        </div>
+                        <br>
+                        <div class="target-speed">
+                            Выбор скорости движения:<br>
+                            <label><input type=radio id="slow" name="speed" value="1" checked>Медленная</label>
+                            <label><input type=radio id="normal" name="speed" value="2">Средняя</label>
+                            <label><input type=radio id="fast" name="speed" value="3">Быстрая</label>
+                        </div>
+                        <br>
+                        <div class="target-color">
+                            Выбор цвета фигур:<br>
+                            <label><input type=checkbox id="color" name="color" value="red" checked>Красный</label>
+                            <label><input type=checkbox id="color" name="color" value="green">Зеленый</label>
+                            <label><input type=checkbox id="color" name="color" value="blue">Синий</label>
+                        </div>
+                    </div>
+                    <div class="st-crosshair">
+                        <div class="ch-type">Тип прицела: </div>
+                        <div class="ch-size">Размер прицела: </div>
+                        <div class="ch-color">Цвет прицела: </div>
+                    </div>
+                    <div class="st-effect">
+                        <div class="ef-hit"> Эффект при выстреле: </div>
+                        <div class="ef-miss"> Эффект при промахе: </div>
+                    </div>
+                </div>
+            </div>
+            </p>
+            <button class="btn-highscores" type="button">Рекорды</button>
+            <p class="highscores">
+
+            </p>
+        </div>
+        <div class="scene">
+            <div class="session-information">
+                <div class="score"></div>
+                <div class="selfkilled"></div>
+                <div class="timer"></div>
+            </div>
+            <div class="field" id="field">
+
+            </div>
+        </div>
+        <div class="statistics">
+            <p class="stat">Статистика</p>
+            <div class="fgrs-stat">
+                <p>Статистика фигур:</p>
+                <div class="fgrs-number"></div>
+                <div class="fgrs-killed"></div>
+                <div class="fgrs-selfkilled"></div>
+            </div>
+            <div class="shots-stat">
+                <p>Статистика выстрелов:</p>
+                <div class="shots-all"></div>
+                <div class="shots-hit"></div>
+                <div class="shots-miss"></div>
+            </div>
+            <p><button class="btn-continue">Продолжить</button></p>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+body{
+    background-color: pink;
+    background-image: url(../Pictures/Sakura.png);
+    background-repeat: no-repeat;
+    background-position: center 300px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.header{
+    text-align: center;
+    transform: translateY(-150%);
+    animation: hd 1s forwards;
+}
+
+@keyframes hd {
+    0% {transform: translateY(-150%);}
+    100% {transform: translateY(0);}
+}
+
+.menu{
+    text-align: center;
+    transform: translateY(-60%);
+    animation: men 1s forwards;
+}
+
+@keyframes men {
+    0% {transform: translateY(-60%);}
+    100% {transform: translateY(0);}
+}
+
+.statistics{
+    display: none;
+    margin: 0 auto;
+    background-color: whitesmoke;
+    border: 1px solid #000000;
+    text-align: center;
+    width: 300px;
+}
+
+.stat{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.fgrs-stat div,
+.shots-stat div{
+    text-align: left;
+    padding: 0px 40px;
+}
+
+.fgrs-stat p,
+.shots-stat p{    
+    text-align: left;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0px 15px;
+}
+
+.play,
+.settings,
+.highscores{
+    text-align: center;
+}
+
+.btn-play,
+.btn-settings,
+.btn-highscores,
+.btn-continue{
+    background-color: #DC143C;
+    font-size: 18px;
+    width: 120px;
+    transition-duration: 0.1s;
+}
+
+.btn-play:hover,
+.btn-settings:hover,
+.btn-highscores:hover,
+.btn-continue:hover{
+    background-color: #FF1493;
+    color: pink;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.st-form{
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+}
+
+.buttons,
+.st-parametres{
+    display: table-cell;
+    background-color: whitesmoke;
+    border: 1px solid #000000;
+    height: 250px;
+    margin: 0 auto;
+}
+
+.buttons{
+    width: 150px;
+    padding: 15px 10px;
+    vertical-align: middle;
+}
+
+.st-parametres{
+    width: 350px;
+    padding: 15px 10px;
+}
+
+.btn-st-mode,
+.btn-st-timer,
+.btn-st-crosshair,
+.btn-st-effect,
+.btn-st-target{
+    font-size: 18px;
+    text-align: left;
+    color: #DC143C;
+    display: table;
+    vertical-align: top;
+    background-color: transparent;
+    border: transparent;
+    text-decoration: underline;
+
+    transition-duration: 0.2s;
+}
+
+.btn-st-mode:hover,
+.btn-st-timer:hover,
+.btn-st-crosshair:hover,
+.btn-st-effect:hover,
+.btn-st-target:hover{
+    color: #000000;
+    text-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.st-mode,
+.st-timer,
+.st-crosshair,
+.st-effect,
+.st-target{
+    text-align: left;
+    font-size: 16px;
+    display: none;
+    vertical-align: top;
+    padding: 0px 10px;
+}
+
+#timer{
+    text-align: center;
+}
+
+.scene{
+    margin: auto;
+    height: 650px;
+    width: 1200px;
+    display: none;
+}
+
+.session-information{
+    margin: 0 auto;
+    display: table;
+}
+
+.score,
+.selfkilled,
+.timer{
+    margin: 0 auto;
+    display: table-cell;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    table-layout: fixed;
+    width: 400px;
+}
+
+.field{
+    background-image: url(../Pictures/Net.png);
+    background-size: auto;
+    background-color: aliceblue;
+    margin: auto;
+    height: 600px;
+    width: 1200px;
+    text-align: center;
+}
+
+.timeOver{
+    background-color: white;
+    border: 1px solid #000;
+    display: none;
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0 auto;
+    position: absolute;             
+    top: 36%;
+    left: 50%;                       
+    transform: translate(-50%, -50%);
+    padding: 0px 10px;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/LogInStyle.css">
+    <script src="JS/jQuery.js"></script>
+    <script src="JS/LogInScript.js"></script>
+    <title>LogIn Point</title>
+</head>
+
+<body>
+    <div id="container">
+
+        <form action="PHP/Entry.php" method="POST" class="entry-form">
+            <p>Entry form:
+                <ul>
+                    <li>
+                        <label for="login">Login:</label>
+                        <input type="text" id="login" name="login" value="PochemuTak" placeholder="Enter login">
+                    </li>
+                    <li>
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" name="password" value="Koio4ml9" placeholder="Enter password">
+                    </li>
+                    <li>
+                        <p>
+                            <button type="submit" id="btn-enter">Log in</button>
+                            <button type="button" id="btn-register">Sign up</button>
+                        </p>
+                    </li>
+                </ul>
+            </p>
+            <p class="result"></p>
+        </form>
+
+        <form action="PHP/Registration.php" method="POST" class="registration-form">
+            <p>Registration form:
+            <ul>
+                <li>
+                    <label for="new-login">Login:</label>
+                    <input type="text" id="new-login" name="new-login" placeholder="Create login">
+                    <div id="new-login-error"></div>
+                    <div id="new-login-error-msg"></div>
+                </li>
+                <li>
+                    <label for="new-password">Password:</label>
+                    <input type="password" id="new-password" name="new-password" placeholder="Create password">
+                    <div id="new-password-error"></div>
+                    <div id="new-password-error-msg"></div>
+                </li>
+                <li>
+                    <label for="new-email">E-mail:</label>
+                    <input type="email" id="new-email" name="new-email" placeholder="Enter your e-mail address">
+                    <div id="new-email-error"></div>
+                    <div id="new-email-error-msg"></div>
+                </li>
+                <li>
+                    <label for="new-name">Name:</label>
+                    <input type="text" id="new-name" name="new-name" placeholder="Enter your name">
+                    <div id="new-name-error"></div>
+                    <div id="new-name-error-msg"></div>
+                </li>
+                <li>
+                    <label for="new-age">Age:</label>
+                    <input type="text" id="new-age" name="new-age" placeholder="Enter your age">
+                    <div id="new-age-error"></div>
+                    <div id="new-age-error-msg"></div>
+                </li>
+                <li>
+                    <p>
+                        <button type="submit" id="btn-new-register">Sign up</button>
+                        <button type="button" id="btn-cancel">Cancel</button>
+                    </p>
+                </li>
+            </ul>
+            </p>
+            <p class="result2"></p>
+        </form>
+
+    </div>
+</body>
+
+</html>

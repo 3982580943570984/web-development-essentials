@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/GameStyle.css" />
+    <script src="../JS/jQuery.js"></script>
+    <script src="../JS/GameScript.js"></script>
+    <title>Game Field</title>
+</head>
+
+<body>
+    <div id="game-screen">
+        <div id="buttons">
+            <button type="button" id="btn-start">Start</button>
+            <button type="button" id="btn-return">Return</button>
+        </div>
+
+        <div id="statistics">
+            <div id="stat-signs">
+                <div id="points">Your score</div>
+                <div id="time-left">Time</div>
+                <div id="lives-remaining">Lives remaining</div>
+            </div>
+            <div id="stat-values">
+                <div id="pnt-value"></div>
+                <div id="time-value"></div>
+                <div id="lives-value">
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                    <div class="heart"></div>
+                </div>
+            </div>
+        </div>
+
+        <div id="game-field">
+            <div id="balloon-field">
+                <div id="balloon">
+                    <div id="bln-number"></div>
+                </div>
+            </div>
+
+            <div id="cloud-field"></div>
+
+            <p id="game-over-sign"></p>
+            <div id="game-over-field">
+                <button type="button" id="btn-get-stats">Statistics</button>
+                <button type="button" id="btn-replay">Reload</button>
+            </div>
+
+            <div class="statistics">
+                <p class="stat">Statistics</p>
+                <div class="score-stat">
+                    <p class="score-number">Score:</p>
+                    <!-- <div class="score-number"></div> -->
+                </div>
+                <div class="time-stat">
+                    <p class="time-alive">Time alive:</p>
+                    <!-- <div class="time-alive"></div> -->
+                </div>
+                <p><button id="btn-continue">Continue</button></p>
+            </div>
+        </div>
+
+        <!-- <div id="abilities-field">
+            <div>
+                <button class="ability" id="bln-speed" data-title="Увеличивает скорость воздушного шара на ~40%">
+                    <div id="btn-keyCode">1</div>
+                </button>
+            </div>
+            <div>
+                <button class="ability" id="bln-delete" data-title="Удаляет случайное облачко">
+                    <div id="btn-keyCode">2</div>
+                </button>
+            </div>
+            <div>
+                <button class="ability" id="bln-time" data-title="Добавляет 5 секунд времени">
+                    <div id="btn-keyCode">3</div>
+                </button>
+            </div>
+        </div> -->
+    </div>
+</body>
+
+</html>

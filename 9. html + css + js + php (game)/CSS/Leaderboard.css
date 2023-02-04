@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Playfair Display Cursive';
+    src: url(../FONTS/PlayfairDisplay-Italic-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: 'Playfair Display';
+    src: url(../FONTS/PlayfairDisplay-VariableFont_wght.ttf);
+}
+
+body {
+    background-image: url(../IMAGES/Texture.jpg);
+    font-family: 'Playfair Display', Courier, monospace;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: .5s;
+}
+
+h2 {
+    font-family: 'Playfair Display Cursive', Courier, monospace;
+    font-size: 34px;
+}
+
+button {
+    background-color: #6a97ce;
+    font-family: 'Playfair Display', Courier, monospace;
+    font-size: 14px;
+    width: 120px;
+    transition-duration: 0.1s;
+}
+
+button:hover {
+    background-color: #6a97ce;
+    color: pink;
+}
+
+#leaderboard-container{
+    margin: 0 auto;
+    width: 70%;
+    height: 900px;
+    overflow: auto;
+}
+
+#leaderboard {
+    margin: 0 auto;
+    width: 100%;
+    border: 1px white;
+    border-spacing: 2px;
+    border-width: 2px;
+    padding: 0;
+}
+
+#leaderboard th {
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#leaderboard td {
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 30px;
+    border-spacing: 6px;
+}
+
+#btn-place{
+    text-align: right;
+}
+
+#th-place,
+#th-age {
+    width: 10%;
+}
+
+#th-name,
+#th-real-name,
+#th-score,
+#th-time {
+    width: 20%; 
+}

@@ -1,0 +1,63 @@
+body{
+    background-color: aquamarine;
+    background-image: url(../Pictures/fallingMen.png);
+    background-size:40%;
+    background-repeat: no-repeat;
+    background-position: right;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#title{
+    font-size: 30px;
+    font-weight: bold;
+    
+    text-align: center;
+}
+
+#Title{
+    font-size: 26px;
+    font-weight: bold;
+}
+
+#instructionText{
+    font-size: 22px;
+    font-weight: bold;
+
+    margin-left: 36px;
+}
+
+#pointSystem{
+    font-size: 22px;
+    font-weight: bold;
+    
+    margin-left: 36px;
+}
+
+form{
+    font-size: 20px;
+}
+
+form input{
+    margin-left: 36px;
+}
+
+form select{
+    margin-left: 36px;
+}
+
+#rightAnswer{
+    color:rgb(0, 255, 0);
+    text-decoration: underline;
+}
+
+#wrongAnswer{
+    color:red;
+    text-decoration: underline;
+}
+
+#sign{
+    font-family: 'Syne Tactile', cursive;
+    font-size: 20px;
+    font-weight: normal;
+    text-align: center;
+}
